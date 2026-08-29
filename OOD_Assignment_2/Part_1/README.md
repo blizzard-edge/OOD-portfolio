@@ -1,4 +1,4 @@
-# UML diagrams.
+# UML diagrams
 
 1. A UML Class Diagram – This UML class diagram should include all classes, abstract classes, or interface 
 definitions you feel you should use to design the Zoo simulation. The diagram should be complete, 
