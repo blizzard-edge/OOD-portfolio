@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=NameGenerator
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ NameGenerator\r\n\ Purpose\:\ Generates\ unique\ names\ for\ Animal\ and\ Staff\ objects.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment1.params=
+comment1.target=NameGenerator()
+comment1.text=\r\n\ Private\ constructor\ prevents\ creation\ of\ NameGenerator\ objects.\r\n\ The\ class\ only\ provides\ static\ naming\ methods.\r\n
+comment2.params=typeName
+comment2.target=java.lang.String\ nextAnimalName(java.lang.String)
+comment2.text=\r\n\ Generates\ a\ unique\ name\ for\ an\ Animal.\r\n\r\n\ @param\ typeName\ the\ animal's\ type\r\n\ @return\ a\ unique\ animal\ name\r\n
+comment3.params=roleName
+comment3.target=java.lang.String\ nextStaffName(java.lang.String)
+comment3.text=\r\n\ Generates\ a\ unique\ name\ for\ a\ Staff\ member.\r\n\r\n\ @param\ roleName\ the\ staff\ member's\ role\r\n\ @return\ a\ unique\ staff\ name\r\n
+numComments=4

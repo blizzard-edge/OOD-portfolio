@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Hospital
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Hospital\r\n\ Purpose\:\ Stores\ animals\ that\ are\ currently\ unhealthy.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment1.params=
+comment1.target=Hospital()
+comment1.text=\r\n\ Creates\ an\ empty\ hospital.\r\n
+comment2.params=animal
+comment2.target=void\ admitAnimal(Animal)
+comment2.text=\r\n\ Admits\ an\ unhealthy\ animal.\r\n\r\n\ @param\ animal\ animal\ being\ admitted\r\n
+comment3.params=animal
+comment3.target=void\ releaseAnimal(Animal)
+comment3.text=\r\n\ Releases\ an\ animal\ after\ it\ has\ recovered.\r\n\r\n\ @param\ animal\ animal\ being\ released\r\n
+comment4.params=
+comment4.target=java.util.List\ getAnimals()
+comment4.text=\r\n\ Gets\ all\ animals\ currently\ in\ the\ hospital.\r\n\r\n\ @return\ unmodifiable\ list\ of\ hospital\ animals\r\n
+numComments=5

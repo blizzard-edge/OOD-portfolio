@@ -6,7 +6,7 @@ import java.util.List;
  * Author: Caitlin Hagler
  * Class: Enclosure
  * Purpose: Stores animals belonging to one concrete animal type.
- * Last Revision Date: September 1, 2026
+ * Last Revision Date: September 2, 2026
  */
 
 public class Enclosure {

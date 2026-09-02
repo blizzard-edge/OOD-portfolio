@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
  * Author: Caitlin Hagler
  * Class: Zoo
  * Purpose: Creates, manages, and runs the Zoo simulation.
- * Last Revision Date: September 1, 2026
+ * Last Revision Date: September 2, 2026
  */
 
 public class Zoo {

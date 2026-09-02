@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Feline
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Feline\r\n\ Purpose\:\ Abstract\ family\ class\ implementing\ feline-specific\ roaming.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment1.params=size\ typeName
+comment1.target=Feline(Size,\ java.lang.String)
+comment2.params=
+comment2.target=void\ roam()
+comment2.text=\r\n\ Felines\ have\ a\ 50%\ chance\ to\ sleep\ instead\ of\ roaming.\r\n
+numComments=3

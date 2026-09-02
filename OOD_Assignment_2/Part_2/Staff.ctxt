@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Staff
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Staff\r\n\ Purpose\:\ Abstract\ base\ class\ for\ Zoo\ employees.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment1.params=roleName
+comment1.target=Staff(java.lang.String)
+comment1.text=\r\n\ Constructs\ a\ staff\ member\ and\ generates\ a\ unique\ name.\r\n\r\n\ @param\ roleName\ staff\ role\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Gets\ the\ staff\ member's\ name.\r\n\r\n\ @return\ staff\ name\r\n
+numComments=3

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Pachyderm
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Pachyderm\r\n\ Purpose\:\ Abstract\ family\ class\ implementing\ pachyderm-specific\ roaming.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment1.params=size\ typeName
+comment1.target=Pachyderm(Size,\ java.lang.String)
+comment2.params=
+comment2.target=void\ roam()
+comment2.text=\r\n\ Pachyderms\ have\ a\ 25%\ chance\ to\ charge\ while\ roaming.\r\n
+numComments=3

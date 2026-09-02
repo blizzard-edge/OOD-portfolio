@@ -1,9 +1,8 @@
-
 /*
  * Author: Caitlin Hagler
  * Class: Main
  * Purpose: Entry point for the Zoo Simulation.
- * Last Revision Date: September 1, 2026
+ * Last Revision Date: September 2, 2026
  */
 
 public class Main {
