@@ -4,6 +4,7 @@
  * Purpose: Represents the Elephant animal type.
  * Last Revision Date: September 2, 2026
  */
+
 public class Elephant extends Pachyderm {
 
     public Elephant() {
