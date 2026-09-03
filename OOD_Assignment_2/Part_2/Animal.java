@@ -94,14 +94,12 @@ public abstract class Animal {
         System.out.println(
                 name + " is eating " + foodUnits + " food units."
         );
-
         return foodUnits;
     }
     /*
      * Family-specific roaming behavior.
      * Each animal family provides its own implementation.
-     */
-  
+     */  
     public abstract void roam();
     // Each concrete animal type provides its own sound. 
     public abstract void makeSound();

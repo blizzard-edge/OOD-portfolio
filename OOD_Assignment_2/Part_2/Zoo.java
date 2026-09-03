@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Zoo {
     /*
-     * AGGREGATION/COMPOSITION EXAMPLE:
+     * Aggregation Example:
      *
      * The Zoo contains and manages its Enclosures, Hospital,
      * Handlers, and Veterinarian.
@@ -72,7 +72,7 @@ public class Zoo {
         /*
          * Three unique instances of every concrete Animal Type.
          *
-         * 12 animal types × 3 = 36 animals.
+         * 12 animal types x3 = 36 animals.
          */
         for (Enclosure enclosure : enclosures) {
             for (int i = 0; i < 3; i++) {
@@ -83,7 +83,7 @@ public class Zoo {
         }
     }
     /*
-     * POLYMORPHISM EXAMPLE:
+     * Polymorphism Example:
      * This method returns an Animal reference while creating
      * different concrete Animal subclasses.
      * 

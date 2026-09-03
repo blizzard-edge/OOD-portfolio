@@ -29,7 +29,7 @@ public class Handler extends Staff {
         return family;
     }
     /*
-     * DELEGATION EXAMPLE:
+     * Delegation Example:
      *
      * The Handler does not implement animal sounds itself.
      * Instead, it delegates the action to each Animal object.
@@ -82,7 +82,7 @@ public class Handler extends Staff {
         return newlySick;
     }
     /*
-     * DELEGATION EXAMPLE:
+     * Delegation Example:
      *
      * The Handler delegates roaming behavior to the Animal.
      * The actual implementation depends on the animal's family.
