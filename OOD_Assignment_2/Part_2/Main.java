@@ -5,7 +5,8 @@ import java.io.PrintStream;
  * Author: Caitlin Hagler
  * Class: Main
  * Purpose: Entry point for the Zoo Simulation.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public class Main {

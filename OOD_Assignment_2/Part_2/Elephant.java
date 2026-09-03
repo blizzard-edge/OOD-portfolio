@@ -2,16 +2,15 @@
  * Author: Caitlin Hagler
  * Class: Elephant
  * Purpose: Represents the Elephant animal type.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public class Elephant extends Pachyderm {
     public Elephant() {
         super(Size.EXTRALARGE, "Elephant");
     }
-    /*
-     * Elephant-specific sound.
-     */  
+    // Elephant-specific sound. 
     @Override
     public void makeSound() {
         System.out.println(

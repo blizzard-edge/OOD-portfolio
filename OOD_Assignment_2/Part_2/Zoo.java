@@ -5,7 +5,8 @@ import java.util.List;
  * Author: Caitlin Hagler
  * Class: Zoo
  * Purpose: Creates, manages, and runs the Zoo simulation.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public class Zoo {
@@ -19,9 +20,7 @@ public class Zoo {
     private final Hospital hospital;
     private final List<Handler> handlers;
     private final Veterinarian veterinarian;
-    /*
-     * Creates an empty Zoo and its Hospital and Veterinarian.
-     */
+    // Creates an empty Zoo and its Hospital and Veterinarian.
     public Zoo() {
         enclosures = new ArrayList<>();
         hospital = new Hospital();
@@ -138,10 +137,8 @@ public class Zoo {
                 );
         }
     }
-    /*
-     * Runs the complete Zoo simulation for 30 days.
-     */
-    public void runSimulation() {
+    // Runs the complete Zoo simulation for 30 days.
+        public void runSimulation() {
         initialize();
         for (int day = 1; day <= 30; day++) {
             System.out.println();
@@ -167,9 +164,7 @@ public class Zoo {
             System.out.println();
         }
     }
-    /*
-     * Each Handler wakes the animals in its assigned family.
-     */
+    // Each Handler wakes the animals in its assigned family.
     private void wakeAnimals() {
         for (Handler handler : handlers) {
             handler.wakeAnimals(
@@ -242,9 +237,7 @@ public class Zoo {
                 "---------------------------------------------"
         );
     }
-    /*
-     * Each Handler exercises its assigned animals.
-     */  
+    // Each Handler exercises its assigned animals. 
     private void exerciseAnimals() {
         for (Handler handler : handlers) {
             handler.exerciseAnimals(
@@ -267,9 +260,7 @@ public class Zoo {
             moveToEnclosure(animal);
         }
     }
-    /*
-     * Each Handler beds down its assigned animals.
-     */  
+    // Each Handler beds down its assigned animals. 
     private void bedAnimals() {
         for (Handler handler : handlers) {
             handler.bedAnimals(

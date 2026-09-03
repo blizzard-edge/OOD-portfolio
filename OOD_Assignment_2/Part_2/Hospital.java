@@ -6,7 +6,8 @@ import java.util.List;
  * Author: Caitlin Hagler
  * Class: Hospital
  * Purpose: Stores animals that are currently unhealthy.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public class Hospital {

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Enclosure
-comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Enclosure\r\n\ Purpose\:\ Stores\ animals\ belonging\ to\ one\ concrete\ animal\ type.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Enclosure\r\n\ Purpose\:\ Stores\ animals\ belonging\ to\ one\ concrete\ animal\ type.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 3,\ 2026\r\n
 comment1.params=animalType
 comment1.target=Enclosure(java.lang.String)
 comment1.text=\r\n\ Creates\ an\ enclosure\ for\ one\ animal\ type.\r\n\r\n\ @param\ animalType\ type\ of\ animal\ kept\ in\ this\ enclosure\r\n

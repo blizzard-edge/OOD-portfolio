@@ -5,7 +5,8 @@ import java.util.List;
  * Author: Caitlin Hagler
  * Class: Handler
  * Purpose: Represents a staff member responsible for one animal family.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public class Handler extends Staff {

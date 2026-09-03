@@ -1,9 +1,8 @@
 #BlueJ class context
 comment0.target=Veterinarian
-comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Veterinarian\r\n\ Purpose\:\ Treats\ unhealthy\ animals\ in\ the\ Zoo\ Hospital.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Veterinarian\r\n\ Purpose\:\ Treats\ unhealthy\ animals\ in\ the\ Zoo\ Hospital.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 3,\ 2026\r\n
 comment1.params=
 comment1.target=Veterinarian()
-comment1.text=\r\n\ Creates\ a\ Veterinarian.\r\n
 comment2.params=hospital
 comment2.target=java.util.List\ treatAnimals(Hospital)
 comment2.text=\r\n\ Treats\ every\ animal\ currently\ in\ the\ Hospital\ once.\r\n\r\n\ Each\ animal\ has\ a\ 50%\ chance\ of\ becoming\ healthy.\r\n\r\n\ @param\ hospital\ Zoo\ hospital\ containing\ sick\ animals\r\n\ @return\ animals\ that\ recovered\r\n

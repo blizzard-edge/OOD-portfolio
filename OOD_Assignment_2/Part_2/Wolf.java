@@ -2,16 +2,15 @@
  * Author: Caitlin Hagler
  * Class: Wolf
  * Purpose: Represents the Wolf animal type.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public class Wolf extends Canine {
     public Wolf() {
         super(Size.LARGE, "Wolf");
     }
-    /*
-     * Wolf-specific sound.
-     */  
+    // Wolf-specific sound. 
     @Override
     public void makeSound() {
         System.out.println(

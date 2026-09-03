@@ -2,7 +2,8 @@
  * Author: Caitlin Hagler
  * Class: NameGenerator
  * Purpose: Generates unique names for Animal and Staff objects.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public final class NameGenerator {

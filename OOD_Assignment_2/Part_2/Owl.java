@@ -2,16 +2,15 @@
  * Author: Caitlin Hagler
  * Class: Owl
  * Purpose: Represents the Owl animal type.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public class Owl extends Bird {
     public Owl() {
         super(Size.MEDIUM, "Owl");
     }
-    /*
-     * Owl-specific sound.
-     */  
+    // Owl-specific sound.
     @Override
     public void makeSound() {
         System.out.println(

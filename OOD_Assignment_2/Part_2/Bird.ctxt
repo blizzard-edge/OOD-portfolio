@@ -1,9 +1,8 @@
 #BlueJ class context
 comment0.target=Bird
-comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Bird\r\n\ Purpose\:\ Abstract\ family\ class\ implementing\ bird\ roaming\ behavior.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Bird\r\n\ Purpose\:\ Abstract\ family\ class\ implementing\ bird\ roaming\ behavior.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 3,\ 2026\r\n
 comment1.params=size\ typeName
 comment1.target=Bird(Size,\ java.lang.String)
 comment2.params=
 comment2.target=void\ roam()
-comment2.text=\r\n\ Birds\ use\ the\ common\ roaming\ behavior.\r\n
 numComments=3

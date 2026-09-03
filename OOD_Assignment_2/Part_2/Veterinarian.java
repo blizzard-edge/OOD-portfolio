@@ -5,13 +5,12 @@ import java.util.List;
  * Author: Caitlin Hagler
  * Class: Veterinarian
  * Purpose: Treats unhealthy animals in the Zoo Hospital.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public class Veterinarian extends Staff {
-    /*
-     * Creates a Veterinarian.
-     */  
+    // Creates a Veterinarian.
     public Veterinarian() {
         super("Veterinarian");
     }

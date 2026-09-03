@@ -2,7 +2,8 @@
  * Author: Caitlin Hagler
  * Class: Staff
  * Purpose: Abstract base class for Zoo employees.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public abstract class Staff {

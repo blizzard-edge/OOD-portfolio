@@ -1,9 +1,8 @@
 #BlueJ class context
 comment0.target=Elephant
-comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Elephant\r\n\ Purpose\:\ Represents\ the\ Elephant\ animal\ type.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Elephant\r\n\ Purpose\:\ Represents\ the\ Elephant\ animal\ type.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 3,\ 2026\r\n
 comment1.params=
 comment1.target=Elephant()
 comment2.params=
 comment2.target=void\ makeSound()
-comment2.text=\r\n\ Elephant-specific\ sound.\r\n
 numComments=3

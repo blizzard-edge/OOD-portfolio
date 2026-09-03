@@ -2,16 +2,15 @@
  * Author: Caitlin Hagler
  * Class: Parrot
  * Purpose: Represents the Parrot animal type.
- * Last Revision Date: September 2, 2026
+ * IDE: BlueJ
+ * Last Revision Date: September 3, 2026
  */
 
 public class Parrot extends Bird {
     public Parrot() {
         super(Size.SMALL, "Parrot");
     }
-    /*
-     * Parrot-specific sound.
-     */  
+    // Parrot-specific sound. 
     @Override
     public void makeSound() {
         System.out.println(

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Hospital
-comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Hospital\r\n\ Purpose\:\ Stores\ animals\ that\ are\ currently\ unhealthy.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Hospital\r\n\ Purpose\:\ Stores\ animals\ that\ are\ currently\ unhealthy.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 3,\ 2026\r\n
 comment1.params=
 comment1.target=Hospital()
 comment1.text=\r\n\ Creates\ an\ empty\ hospital.\r\n
