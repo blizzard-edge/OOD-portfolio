@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Handler
-comment0.text=\r\n\ Author\:\ Blizzard\ Edge\r\n\ Class\:\ Handler\r\n\ Purpose\:\ Represents\ a\ staff\ member\ responsible\ for\ one\ animal\ family.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Handler\r\n\ Purpose\:\ Represents\ a\ staff\ member\ responsible\ for\ one\ animal\ family.\r\n\ Last\ Revision\ Date\:\ September\ 2,\ 2026\r\n
 comment1.params=family
 comment1.target=Handler(AnimalFamily)
 comment1.text=\r\n\ Creates\ a\ Handler\ assigned\ to\ an\ animal\ family.\r\n\r\n\ @param\ family\ animal\ family\ assigned\ to\ the\ Handler\r\n

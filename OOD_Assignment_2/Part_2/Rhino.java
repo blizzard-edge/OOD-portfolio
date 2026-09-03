@@ -6,15 +6,12 @@
  */
 
 public class Rhino extends Pachyderm {
-
     public Rhino() {
         super(Size.LARGE, "Rhino");
     }
-
     /*
      * Rhino-specific sound.
-     */
-    
+     */    
     @Override
     public void makeSound() {
         System.out.println(

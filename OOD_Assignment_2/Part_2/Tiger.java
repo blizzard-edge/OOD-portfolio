@@ -6,15 +6,12 @@
  */
 
 public class Tiger extends Feline {
-
     public Tiger() {
         super(Size.LARGE, "Tiger");
     }
-
     /*
      * Tiger-specific sound.
-     */
-  
+     */  
     @Override
     public void makeSound() {
         System.out.println(

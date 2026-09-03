@@ -6,15 +6,12 @@
  */
 
 public class Falcon extends Bird {
-
     public Falcon() {
         super(Size.MEDIUM, "Falcon");
     }
-
     /*
      * Falcon-specific sound.
-     */
-  
+     */  
     @Override
     public void makeSound() {
         System.out.println(

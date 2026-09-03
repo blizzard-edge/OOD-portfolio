@@ -6,15 +6,12 @@
  */
 
 public class Elephant extends Pachyderm {
-
     public Elephant() {
         super(Size.EXTRALARGE, "Elephant");
     }
-
     /*
      * Elephant-specific sound.
-     */
-  
+     */  
     @Override
     public void makeSound() {
         System.out.println(

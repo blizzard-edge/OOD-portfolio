@@ -6,15 +6,12 @@
  */
 
 public class Wolf extends Canine {
-
     public Wolf() {
         super(Size.LARGE, "Wolf");
     }
-
     /*
      * Wolf-specific sound.
-     */
-  
+     */  
     @Override
     public void makeSound() {
         System.out.println(

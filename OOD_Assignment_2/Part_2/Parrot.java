@@ -6,15 +6,12 @@
  */
 
 public class Parrot extends Bird {
-
     public Parrot() {
         super(Size.SMALL, "Parrot");
     }
-
     /*
      * Parrot-specific sound.
-     */
-  
+     */  
     @Override
     public void makeSound() {
         System.out.println(

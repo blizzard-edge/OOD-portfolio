@@ -6,15 +6,12 @@
  */
 
 public class Owl extends Bird {
-
     public Owl() {
         super(Size.MEDIUM, "Owl");
     }
-
     /*
      * Owl-specific sound.
-     */
-  
+     */  
     @Override
     public void makeSound() {
         System.out.println(

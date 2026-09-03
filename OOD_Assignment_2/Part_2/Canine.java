@@ -6,15 +6,12 @@
  */
 
 public abstract class Canine extends Animal {
-
     protected Canine(Size size, String typeName) {
         super(size, typeName);
     }
-
     /*
      * Canines use the common roaming behavior.
-     */
-  
+     */  
     @Override
     public void roam() {
         System.out.println(

@@ -6,15 +6,12 @@
  */
 
 public class Hippo extends Pachyderm {
-
     public Hippo() {
         super(Size.LARGE, "Hippo");
     }
-
     /*
      * Hippo-specific sound.
-     */
-  
+     */  
     @Override
     public void makeSound() {
         System.out.println(

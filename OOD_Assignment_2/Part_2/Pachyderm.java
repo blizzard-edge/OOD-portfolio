@@ -6,21 +6,17 @@
  */
 
 public abstract class Pachyderm extends Animal {
-
     protected Pachyderm(Size size, String typeName) {
         super(size, typeName);
     }
-
     /*
      * Pachyderms have a 25% chance to charge while roaming.
-     */
-  
+     */  
     @Override
     public void roam() {
-
         if (Math.random() < 0.25) {
             System.out.println(
-                    getName() + " is roaming – and charged!"
+                    getName() + " is roaming, and has charged!"
             );
         }
         else {

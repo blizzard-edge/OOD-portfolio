@@ -2,37 +2,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * Author: Blizzard Edge
+ * Author: Caitlin Hagler
  * Class: Handler
  * Purpose: Represents a staff member responsible for one animal family.
  * Last Revision Date: September 2, 2026
  */
 
 public class Handler extends Staff {
-
     private final AnimalFamily family;
-
     /*
      * Creates a Handler assigned to an animal family.
      *
      * @param family animal family assigned to the Handler
-     */
-  
+     */  
     public Handler(AnimalFamily family) {
         super(family + " Handler");
         this.family = family;
     }
-
     /*
      * Gets the Handler's assigned animal family.
      *
      * @return animal family
-     */
-  
+     */  
     public AnimalFamily getFamily() {
         return family;
     }
-
     /*
      * DELEGATION EXAMPLE:
      *
@@ -43,19 +37,15 @@ public class Handler extends Staff {
      * makeSound() implementation.
      *
      * @param animals animals to wake
-     */
-  
+     */  
     public void wakeAnimals(List<Animal> animals) {
-
         System.out.println(
                 getName() + " is waking animals."
         );
-
         for (Animal animal : new ArrayList<>(animals)) {
             animal.makeSound();
         }
     }
-
     /*
      * Feeds each animal.
      *
@@ -64,28 +54,20 @@ public class Handler extends Staff {
      *
      * @param animals animals being fed
      * @return animals that became unhealthy
-     */
-  
+     */  
     public List<Animal> feedAnimals(List<Animal> animals) {
-
         System.out.println(
                 getName() + " is feeding animals."
         );
-
         List<Animal> newlySick = new ArrayList<>();
-
         for (Animal animal : new ArrayList<>(animals)) {
-
             int foodUnits = animal.eat();
-
             /*
              * If the animal eats 0 or too much, there is a
              * 50% chance of becoming unhealthy.
-             */
-          
+             */          
             if ((foodUnits == 0 || foodUnits > 1)
                     && Math.random() < 0.50) {
-
                 animal.setHealthy(false);
 
                 newlySick.add(animal);
@@ -96,10 +78,8 @@ public class Handler extends Staff {
                 );
             }
         }
-
         return newlySick;
     }
-
     /*
      * DELEGATION EXAMPLE:
      *
@@ -107,31 +87,24 @@ public class Handler extends Staff {
      * The actual implementation depends on the animal's family.
      *
      * @param animals animals being exercised
-     */
-  
+     */  
     public void exerciseAnimals(List<Animal> animals) {
-
         System.out.println(
                 getName() + " is exercising animals."
         );
-
         for (Animal animal : new ArrayList<>(animals)) {
             animal.roam();
         }
     }
-
     /*
      * Beds animals down for the evening.
      *
      * @param animals animals being put to bed
-     */
-  
+     */  
     public void bedAnimals(List<Animal> animals) {
-
         System.out.println(
-                getName() + " is bedding down animals."
+                getName() + " is putting animals to bed."
         );
-
         for (Animal animal : new ArrayList<>(animals)) {
             animal.sleep();
         }

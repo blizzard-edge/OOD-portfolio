@@ -6,15 +6,12 @@
  */
 
 public class Cheetah extends Feline {
-
     public Cheetah() {
         super(Size.MEDIUM, "Cheetah");
     }
-
     /*
      * Cheetah-specific sound.
-     */
-  
+     */  
     @Override
     public void makeSound() {
         System.out.println(

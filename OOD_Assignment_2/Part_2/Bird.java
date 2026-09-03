@@ -6,15 +6,12 @@
  */
 
 public abstract class Bird extends Animal {
-
     protected Bird(Size size, String typeName) {
         super(size, typeName);
     }
-
     /*
      * Birds use the common roaming behavior.
-     */
-  
+     */  
     @Override
     public void roam() {
         System.out.println(

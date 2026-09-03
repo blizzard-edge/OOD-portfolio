@@ -6,15 +6,12 @@
  */
 
 public class Fox extends Canine {
-
     public Fox() {
         super(Size.MEDIUM, "Fox");
     }
-
     /*
      * Fox-specific sound.
-     */
-  
+     */  
     @Override
     public void makeSound() {
         System.out.println(

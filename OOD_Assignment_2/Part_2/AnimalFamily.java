@@ -6,8 +6,8 @@
  */
 
 public enum AnimalFamily {
-    PACHYDERM,
-    FELINE,
-    BIRD,
-    CANINE
+    Pachyderm,
+    Feline,
+    Bird,
+    Canine
 }
