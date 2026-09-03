@@ -13,7 +13,13 @@ import java.util.List;
 public class Enclosure {
     private final String name;
     private final String animalType;
-    private final List<Animal> animals;
+    private final List<Animal> animals;    
+    /*
+     * Cohesion Example:
+     * 
+     * All of the Enclosure's methods and data are directly 
+     * related to managing animals within the enclosure.
+     */
     /*
      * Creates an enclosure for one animal type.
      *

@@ -10,7 +10,11 @@ import java.util.List;
  */
 
 public class Veterinarian extends Staff {
-    // Creates a Veterinarian.
+    /* Cohesion Example:
+     * 
+     * Veterinarian's responsibility is focused 
+     * specifically on treating sick animals.
+     */
     public Veterinarian() {
         super("Veterinarian");
     }
