@@ -7,24 +7,39 @@ import java.util.List;
  * Class: Hospital
  * Purpose: Stores animals that are currently unhealthy.
  * IDE: BlueJ
- * Last Revision Date: September 3, 2026
+ * Last Revision Date: September 15, 2026
+ * 
+ * Design Pattern: Singleton
+ * Hospital uses eager instantiation. The single Hospital instance
+ * is created when the class is loaded.
  */
 
 public class Hospital {
+    // Singleton: Eagerly-created single instance.
+    private static final Hospital instance = new Hospital();
+    
     private final List<Animal> animals;
-    /*
-     * Creates an empty hospital.
-     */  
+    // Creates an empty hospital. 
     public Hospital() {
         animals = new ArrayList<>();
     }
     /*
-     * Admits an unhealthy animal.
+     * Returns the single Hospital instance.
      *
-     * @param animal animal being admitted
-     */  
+     * @return the Singleton Hospital
+     */
+    public static Hospital getInstance() {
+        return instance;
+    }
+        /*
+         * Admits an unhealthy animal.
+         *
+         * @param animal animal being admitted
+         */  
     public void admitAnimal(Animal animal) {
-        animals.add(animal);
+        if (!animals.contains(animal)) {
+            animals.add(animal);
+        }
     }
     /*
      * Releases an animal after it has recovered.

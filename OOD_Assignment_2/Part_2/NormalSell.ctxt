@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=NormalSell
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ NormalSell\r\n\ Purpose\:\ Strategy\ that\ increases\ sale\ likelihood\ by\ 20%\r\n\ \ \ \ \ \ \ \ \ \ and\ exit\ chance\ by\ 10%.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 15,\ 2026\r\n\r\n\ Design\ Pattern\:\ Strategy\r\n
+comment1.params=
+comment1.target=double\ getSaleModifier()
+comment2.params=
+comment2.target=double\ getExitModifier()
+numComments=3

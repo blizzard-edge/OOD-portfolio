@@ -6,7 +6,7 @@ import java.util.List;
  * Class: Zoo
  * Purpose: Creates, manages, and runs the Zoo simulation.
  * IDE: BlueJ
- * Last Revision Date: September 3, 2026
+ * Last Revision Date: September 16, 2026
  */
 
 public class Zoo {
@@ -20,12 +20,28 @@ public class Zoo {
     private final Hospital hospital;
     private final List<Handler> handlers;
     private final Veterinarian veterinarian;
-    // Creates an empty Zoo and its Hospital and Veterinarian.
+    
+    private final List<Shop> shops;
+    private final List<Vendor> vendors;
+    private final SalesTracker salesTracker;    
+    /*
+     * Creates an empty Zoo and obtains the Singleton Hospital 
+     * and SalesTracker instances.
+     */
     public Zoo() {
         enclosures = new ArrayList<>();
-        hospital = new Hospital();
+        
+        // Singleton: Hospital uses eager instantiation.
+        hospital = Hospital.getInstance();
+        
         handlers = new ArrayList<>();
         veterinarian = new Veterinarian();
+        
+        shops = new ArrayList<>();
+        vendors = new ArrayList<>();
+
+        // Singleton: SalesTracker uses lazy instantiation.
+        salesTracker = SalesTracker.getInstance();
     }
     /*
      * Initializes the Zoo.
@@ -68,7 +84,7 @@ public class Zoo {
         );
         handlers.add(
                 new Handler(AnimalFamily.Canine)
-        );
+        );        
         /*
          * Three unique instances of every concrete Animal Type.
          *
@@ -79,6 +95,97 @@ public class Zoo {
                 Animal animal =
                         createAnimal(enclosure.getAnimalType());
                 enclosure.addAnimal(animal);
+            }
+        }
+        // Initialize the five Shops and their Vendors.
+        initializeShops();
+    }
+    /*
+     * Creates and initializes the five required Zoo Shops.
+     *
+     * Each Shop receives:
+     * - 100-200 starting inventory
+     * - $1-$10 item price
+     * - 10%-25% sale likelihood
+     * - one uniquely named Vendor
+     *
+     * All four SalesBehavior Strategies are used at least once.
+     */
+    private void initializeShops() {
+        String[] shopNames = {
+            "Gifts",
+            "Maps",
+            "Drinks",
+            "Food",
+            "Toys"
+        };    
+        SalesBehavior[] behaviors = {
+            new NoSell(),
+            new SoftSell(),
+            new NormalSell(),
+            new HardSell(),
+            new NormalSell()
+        };    
+        for (int i = 0; i < shopNames.length; i++) {
+            int inventory =
+                    100 + (int) (Math.random() * 101);    
+            double price =
+                    1 + (Math.random() * 9);    
+            double likelihood =
+                    0.10 + (Math.random() * 0.15);
+    
+            Shop shop = new Shop(
+                    shopNames[i],
+                    inventory,
+                    price,
+                    likelihood
+            );
+    
+            Vendor vendor =
+                    new Vendor(shop, behaviors[i]);
+   
+            shop.setVendor(vendor);
+    
+            shops.add(shop);
+            vendors.add(vendor);
+    
+            // Observer: SalesTracker subscribes to this Shop.
+            salesTracker.registerShop(shop);
+        }
+    }
+    /*
+     * Each Vendor prepares their assigned Shop.
+     *
+     * If a Shop has fewer than 20 items, the Vendor causes
+     * the Shop to purchase 100 additional items.
+     */
+    private void prepareShops() {
+        for (Vendor vendor : vendors) {
+            vendor.prepareShop();
+        }
+    } 
+    /*
+     * Simulates the visitors who shop at the Zoo Shops.
+     *
+     * Each day, between 50 and 100 visitors enter the Zoo.
+     * Each visitor visits Shops until all Shops have been visited
+     * or the visitor exits.
+     *
+     * Shop events are handled by the Observer pattern and are
+     * not printed individually to the console.
+     */
+    private void sellItems() {
+        int visitors =
+                50 + (int) (Math.random() * 51);
+        System.out.println(
+                "Today we have " + visitors + " visitors!"
+        );
+        for (int visitor = 0; visitor < visitors; visitor++) {
+            for (Shop shop : shops) {
+                boolean exited = shop.visit();
+                if (exited) {
+                    break;
+                }
             }
         }
     }
@@ -146,12 +253,16 @@ public class Zoo {
             System.out.println("             START DAY " + day);
             System.out.println("========================================");
 
+            prepareShops();
+            
             wakeAnimals();
 
             feedAnimals();
 
             zooStatus();
 
+            sellItems();
+            
             exerciseAnimals();
 
             treatAnimals();
@@ -236,6 +347,9 @@ public class Zoo {
         System.out.println(
                 "---------------------------------------------"
         );
+        
+        // Observer: SalesTracker displays the Shop activity summary.
+        salesTracker.summary();
     }
     // Each Handler exercises its assigned animals. 
     private void exerciseAnimals() {
