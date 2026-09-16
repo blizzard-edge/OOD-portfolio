@@ -7,7 +7,7 @@ import java.util.List;
  * Class: Hospital
  * Purpose: Stores animals that are currently unhealthy.
  * IDE: BlueJ
- * Last Revision Date: September 15, 2026
+ * Last Revision Date: September 16, 2026
  * 
  * Design Pattern: Singleton
  * Hospital uses eager instantiation. The single Hospital instance
@@ -19,6 +19,7 @@ public class Hospital {
     private static final Hospital instance = new Hospital();
     
     private final List<Animal> animals;
+    
     // Creates an empty hospital. 
     public Hospital() {
         animals = new ArrayList<>();
