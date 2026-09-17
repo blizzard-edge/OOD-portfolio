@@ -7,7 +7,7 @@ import java.util.List;
  * Purpose: Represents a Zoo Shop that stores inventory, cash,
  *          pricing, and visitor sale likelihood.
  * IDE: BlueJ
- * Last Revision Date: September 15, 2026
+ * Last Revision Date: September 16, 2026
  *
  * Design Pattern: Observer
  *
@@ -32,11 +32,10 @@ public class Shop implements Subject {
      * @param likelihood normal sale likelihood
      */
     public Shop(
-            String name,
-            int inventory,
-            double price,
-            double likelihood) {
-
+        String name,
+        int inventory,
+        double price,
+        double likelihood) {
         this.name = name;
         this.inventory = inventory;
         this.price = price;
@@ -67,7 +66,6 @@ public class Shop implements Subject {
      */
     public void prepareInventory() {
         if (inventory < 20) {
-
             int addedItems = 100;
             double cost = addedItems * (price / 2.0);
 
@@ -75,11 +73,11 @@ public class Shop implements Subject {
             cash -= cost;
 
             System.out.printf(
-                    "%s is preparing inventory: "
-                    + "added %d items. Cost: $%.2f%n",
-                    name,
-                    addedItems,
-                    cost
+                "%s is preparing inventory: "
+                + "added %d items. Cost: $%.2f%n",
+                name,
+                addedItems,
+                cost
             );
         }
     }
@@ -92,10 +90,9 @@ public class Shop implements Subject {
         notify(ShopEvent.Visit, 0.0);
 
         double saleChance = likelihood;
-
         if (vendor != null) {
             saleChance *=
-                    vendor.getSalesBehavior().getSaleModifier();
+                vendor.getSalesBehavior().getSaleModifier();
         }
         // Prevent the modified likelihood from exceeding 100%.
         saleChance = Math.min(saleChance, 1.0);
@@ -105,7 +102,7 @@ public class Shop implements Subject {
         double exitChance = 0.05;
         if (vendor != null) {
             exitChance +=
-                    vendor.getSalesBehavior().getExitModifier();
+                vendor.getSalesBehavior().getExitModifier();
         }
         if (Math.random() < exitChance) {
             notify(ShopEvent.Exit, 0.0);
@@ -166,7 +163,6 @@ public class Shop implements Subject {
             double price) {
         for (Observer observer :
                 new ArrayList<>(observers)) {
-
             observer.update(this, event, price);
         }
     }

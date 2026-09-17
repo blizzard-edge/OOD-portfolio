@@ -14,7 +14,7 @@ public class Rhino extends Pachyderm {
     @Override
     public void makeSound() {
         System.out.println(
-                getName() + " makes a sound: The rhino snorts."
+        getName() + " makes a sound: The rhino snorts."
         );
     }
 }

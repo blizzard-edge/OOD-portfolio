@@ -128,21 +128,21 @@ public class Zoo {
         };    
         for (int i = 0; i < shopNames.length; i++) {
             int inventory =
-                    100 + (int) (Math.random() * 101);    
+            100 + (int) (Math.random() * 101);    
             double price =
-                    1 + (Math.random() * 9);    
+                1 + (Math.random() * 9);    
             double likelihood =
-                    0.10 + (Math.random() * 0.15);
+                0.10 + (Math.random() * 0.15);
     
             Shop shop = new Shop(
-                    shopNames[i],
-                    inventory,
-                    price,
-                    likelihood
+                shopNames[i],
+                inventory,
+                price,
+                likelihood
             );
     
             Vendor vendor =
-                    new Vendor(shop, behaviors[i]);
+                new Vendor(shop, behaviors[i]);
    
             shop.setVendor(vendor);
     
@@ -176,9 +176,9 @@ public class Zoo {
      */
     private void sellItems() {
         int visitors =
-                50 + (int) (Math.random() * 51);
+            50 + (int) (Math.random() * 51);
         System.out.println(
-                "Today we have " + visitors + " visitors!"
+            "Today we have " + visitors + " visitors!"
         );
         for (int visitor = 0; visitor < visitors; visitor++) {
             for (Shop shop : shops) {
@@ -279,7 +279,7 @@ public class Zoo {
     private void wakeAnimals() {
         for (Handler handler : handlers) {
             handler.wakeAnimals(
-                    getAnimalsForFamily(handler.getFamily())
+                getAnimalsForFamily(handler.getFamily())
             );
         }
     }
@@ -291,11 +291,11 @@ public class Zoo {
     private void feedAnimals() {
         for (Handler handler : handlers) {
             List<Animal> sickAnimals =
-                    handler.feedAnimals(
-                            getAnimalsForFamily(
-                                    handler.getFamily()
-                            )
-                    );
+                handler.feedAnimals(
+                    getAnimalsForFamily(
+                        handler.getFamily()
+                )
+            );
             for (Animal animal : sickAnimals) {
                 moveToHospital(animal);
             }
@@ -314,38 +314,38 @@ public class Zoo {
         );
         for (Enclosure enclosure : enclosures) {
             Handler handler =
-                    getHandlerForType(
-                            enclosure.getAnimalType()
-                    );
+                getHandlerForType(
+                enclosure.getAnimalType()
+            );
 
             System.out.printf(
-                    "%-20s Handler: %-20s%n",
-                    enclosure.getName(),
-                    handler.getName()
+                "%-20s Handler: %-20s%n",
+                enclosure.getName(),
+                handler.getName()
             );
             for (Animal animal :
                     enclosure.getAnimals()) {
                 System.out.printf(
-                        "   %-20s Healthy: %s%n",
-                        animal.getName(),
-                        animal.isHealthy()
+                    "   %-20s Healthy: %s%n",
+                    animal.getName(),
+                    animal.isHealthy()
                 );
             }
         }
         System.out.println(
-                "Hospital              Veterinarian: "
-                + veterinarian.getName()
+            "Hospital              Veterinarian: "
+            + veterinarian.getName()
         );
         for (Animal animal :
                 hospital.getAnimals()) {
             System.out.printf(
-                    "   %-20s Healthy: %s%n",
-                    animal.getName(),
-                    animal.isHealthy()
+                "   %-20s Healthy: %s%n",
+                animal.getName(),
+                animal.isHealthy()
             );
         }
         System.out.println(
-                "---------------------------------------------"
+            "---------------------------------------------"
         );
         
         // Observer: SalesTracker displays the Shop activity summary.
@@ -355,9 +355,9 @@ public class Zoo {
     private void exerciseAnimals() {
         for (Handler handler : handlers) {
             handler.exerciseAnimals(
-                    getAnimalsForFamily(
-                            handler.getFamily()
-                    )
+                getAnimalsForFamily(
+                    handler.getFamily()
+                )
             );
         }
     }
@@ -369,7 +369,7 @@ public class Zoo {
      */  
     private void treatAnimals() {
         List<Animal> recovered =
-                veterinarian.treatAnimals(hospital);
+            veterinarian.treatAnimals(hospital);
         for (Animal animal : recovered) {
             moveToEnclosure(animal);
         }
@@ -378,9 +378,9 @@ public class Zoo {
     private void bedAnimals() {
         for (Handler handler : handlers) {
             handler.bedAnimals(
-                    getAnimalsForFamily(
-                            handler.getFamily()
-                    )
+                getAnimalsForFamily(
+                    handler.getFamily()
+                )
             );
         }
     }
@@ -391,10 +391,10 @@ public class Zoo {
      * @param animal unhealthy animal
      */
     public void moveToHospital(Animal animal) {
-        Enclosure enclosure =
-                findEnclosure(
-                        animal.getTypeName()
-                );
+        Enclosure enclosure = 
+            findEnclosure(
+                animal.getTypeName()
+            );
         if (enclosure != null) {
             enclosure.removeAnimal(animal);
         }
@@ -410,9 +410,9 @@ public class Zoo {
         hospital.releaseAnimal(animal);
 
         Enclosure enclosure =
-                findEnclosure(
-                        animal.getTypeName()
-                );
+            findEnclosure(
+                animal.getTypeName()
+            );
         if (enclosure != null) {
             enclosure.addAnimal(animal);
         }
@@ -439,14 +439,14 @@ public class Zoo {
      */  
     private Handler getHandlerForType(String type) {
         AnimalFamily family =
-                getFamilyForType(type);
+            getFamilyForType(type);
         for (Handler handler : handlers) {
             if (handler.getFamily() == family) {
                 return handler;
             }
         }
         throw new IllegalStateException(
-                "No Handler found for " + family
+            "No Handler found for " + family
         );
     }
     /*
@@ -479,7 +479,7 @@ public class Zoo {
 
             default:
                 throw new IllegalArgumentException(
-                        "Unknown animal type: " + type
+                    "Unknown animal type: " + type
                 );
         }
     }
@@ -495,13 +495,13 @@ public class Zoo {
     private List<Animal> getAnimalsForFamily(
             AnimalFamily family) {
         List<Animal> animals =
-                new ArrayList<>();
+            new ArrayList<>();
         for (Enclosure enclosure : enclosures) {
             if (getFamilyForType(
                     enclosure.getAnimalType()
             ) == family) {
                 animals.addAll(
-                        enclosure.getAnimals()
+                    enclosure.getAnimals()
                 );
             }
         }

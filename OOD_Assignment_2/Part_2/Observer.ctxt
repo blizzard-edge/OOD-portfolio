@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Observer
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Observer\r\n\ Purpose\:\ Defines\ the\ interface\ for\ objects\ that\ receive\ Shop\ events.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 16,\ 2026\r\n\r\n\ Design\ Pattern\:\ Observer\r\n
+comment1.params=shop\ event\ price
+comment1.target=void\ update(Shop,\ ShopEvent,\ double)
+comment1.text=\r\n\ Receives\ an\ event\ published\ by\ a\ Shop.\r\n\ \r\n\ @param\ event\ Shop\ event\ being\ published\r\n
+numComments=2

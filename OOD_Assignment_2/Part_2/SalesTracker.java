@@ -6,7 +6,7 @@ import java.util.Map;
  * Class: SalesTracker
  * Purpose: Tracks daily Shop visits, sales, sales revenue, and exits.
  * IDE: BlueJ
- * Last Revision Date: September 15, 2026
+ * Last Revision Date: September 16, 2026
  *
  * Design Patterns:
  *
@@ -41,7 +41,6 @@ public class SalesTracker implements Observer {
         if (instance == null) {
             instance = new SalesTracker();
         }
-
         return instance;
     }
     /*
@@ -116,12 +115,10 @@ public class SalesTracker implements Observer {
      * Displays the daily summary for every Shop.
      */
     public void summary() {
-
         System.out.println();
         System.out.println(
                 "--------------- SHOP SUMMARY ---------------"
         );
-
         for (Map.Entry<Shop, ShopSummary> entry :
                 shopData.entrySet()) {
 
@@ -129,23 +126,22 @@ public class SalesTracker implements Observer {
             ShopSummary summary = entry.getValue();
 
             System.out.printf(
-                    "%-10s Vendor: %-15s Visits: %-4d "
-                    + "Sales: %-4d Total Sales: $%-7.2f Exits: %d%n",
-                    shop.getName(),
-                    shop.getVendor().getName(),
-                    summary.getVisits(),
-                    summary.getSales(),
-                    summary.getTotalSales(),
-                    summary.getExits()
+                "%-10s Vendor: %-15s Visits: %-4d "
+                + "Sales: %-4d Total Sales: $%-7.2f Exits: %d%n",
+                shop.getName(),
+                shop.getVendor().getName(),
+                summary.getVisits(),
+                summary.getSales(),
+                summary.getTotalSales(),
+                summary.getExits()
             );
         }
         System.out.println(
-                "---------------------------------------------"
+            "---------------------------------------------"
         );
     }
     // Resets all daily statistics to zero.
     public void resetDailyData() {
-
         for (ShopSummary summary : shopData.values()) {
             // Replace the old values by resetting each statistic.
             while (summary.getVisits() > 0) {
