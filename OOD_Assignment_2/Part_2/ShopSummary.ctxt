@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=ShopSummary
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ ShopSummary\r\n\ Purpose\:\ Stores\ daily\ sales\ statistics\ for\ one\ Shop.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 15,\ 2026\r\n
+comment1.params=
+comment1.target=ShopSummary()
+comment2.params=
+comment2.target=void\ addVisit()
+comment3.params=price
+comment3.target=void\ addSale(double)
+comment4.params=
+comment4.target=void\ addExit()
+comment5.params=
+comment5.target=int\ getVisits()
+comment6.params=
+comment6.target=int\ getSales()
+comment7.params=
+comment7.target=double\ getTotalSales()
+comment8.params=
+comment8.target=int\ getExits()
+numComments=9

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SalesBehavior
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ SalesBehavior\r\n\ Purpose\:\ Defines\ the\ Strategy\ interface\ for\ Vendor\ sales\ behavior.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 15,\ 2026\r\n\r\n\ Design\ Pattern\:\ Strategy\r\n\r\n\ Different\ SalesBehavior\ implementations\ modify\ the\ Shop's\r\n\ normal\ sale\ likelihood\ and\ visitor\ exit\ chance.\r\n
+comment1.params=
+comment1.target=double\ getSaleModifier()
+comment1.text=\r\n\ Gets\ the\ multiplier\ applied\ to\ a\ Shop's\ sale\ likelihood.\r\n\r\n\ @return\ sale\ likelihood\ multiplier\r\n
+comment2.params=
+comment2.target=double\ getExitModifier()
+comment2.text=\r\n\ Gets\ the\ additional\ exit\ chance\ caused\ by\ the\ Vendor.\r\n\r\n\ @return\ additional\ exit\ chance\r\n
+numComments=3

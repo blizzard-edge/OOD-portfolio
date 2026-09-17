@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Vendor
+comment0.text=\r\n\ Author\:\ Caitlin\ Hagler\r\n\ Class\:\ Vendor\r\n\ Purpose\:\ Represents\ a\ staff\ member\ assigned\ to\ a\ Shop.\r\n\ IDE\:\ BlueJ\r\n\ Last\ Revision\ Date\:\ September\ 15,\ 2026\r\n\r\n\ Design\ Pattern\:\ Strategy\r\n\r\n\ A\ Vendor\ contains\ a\ SalesBehavior\ Strategy.\ The\ behavior\ can\r\n\ therefore\ vary\ between\ Vendors\ without\ changing\ the\ Vendor\ class.\r\n
+comment1.params=shop\ salesBehavior
+comment1.target=Vendor(Shop,\ SalesBehavior)
+comment1.text=\r\n\ Creates\ a\ Vendor\ assigned\ to\ a\ Shop.\r\n\r\n\ @param\ shop\ Shop\ assigned\ to\ the\ Vendor\r\n\ @param\ salesBehavior\ sales\ strategy\ used\ by\ the\ Vendor\r\n
+comment2.params=
+comment2.target=void\ prepareShop()
+comment2.text=\r\n\ Prepares\ the\ Vendor's\ Shop.\r\n\r\n\ If\ inventory\ is\ below\ 20\ items,\ the\ Shop\ purchases\r\n\ 100\ additional\ items.\r\n
+comment3.params=
+comment3.target=Shop\ getShop()
+comment3.text=\r\n\ Gets\ the\ Vendor's\ Shop.\r\n\r\n\ @return\ assigned\ Shop\r\n
+comment4.params=
+comment4.target=SalesBehavior\ getSalesBehavior()
+comment4.text=\r\n\ Gets\ the\ Vendor's\ SalesBehavior.\r\n\r\n\ @return\ sales\ behavior\ strategy\r\n
+numComments=5
